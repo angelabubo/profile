@@ -133,8 +133,13 @@ hr.squared {
 
 .skill-row {
   width: 65%;
-  margin: 100px auto 130px auto;
+  margin: 100px auto 0px auto;
   text-align: left;
+}
+
+.contact-me {
+  width: 65%;
+  margin: 100px auto 130px auto;
 }
 
 /* Footer Section */
