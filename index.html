@@ -1,80 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
   <title>Angel Abubo</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+  <!-- icons -->
+  <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" integrity="sha384-ujbKXb9V3HdK7jcWL6kHL1c+2Lj4MR4Gkjl7UtwpSHg/ClpViddK9TI7yU53frPN" crossorigin="anonymous"></script>
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet">
-
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="angel.ico">
+  <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-  <div class="top-container">
-    <img class="left-post-it" src="images/post-it-left.png" alt="post-it-left">
-    <img class="right-post-it" src="images/post-it-right.png" alt="post-it-right">
-    <img class="bot-post-it" src="images/post-it-bot.png" alt="post-it-bot">
-    <img class="calendar" src="images/calendar.png" alt="calendar">
-    <img class="bot-right-post-it" src="images/post-it-right-bot.png" alt="post-it-bot">
-    <div class="myHeader">
-      <h1>I am Angel,</h1>
-      <h2>a software developer.</h2>
-    </div>
-    <img class="computer" src="images/computer.png" alt="computer">
-  </div>
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img class="logo" src="assets/img/programmer_128.png" alt="logo">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i
+          class="fas fa-bars"></i></button>
 
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile_picture" src="images/angel-profile.jpg" alt="angel-profile">
-      <h2>Hello.</h2>
-      <p>I am a C++ and C# software developer for more than a decade. I am currently sharpening my saw by studying
-        mobile and web applications development in Toronto <img class="cntower" src="images/cntower.png" alt="cntower">.</p>
-    </div>
-
-    <hr class="squared">
-
-    <div class="skills">
-      <h2>About Me.</h2>
-      <div class="skill-row">
-        <img class="animated-coding" src="https://media.giphy.com/media/kEv1gFLidWzLJO8n61/giphy.gif" alt="programming">
-        <h3>Software Development is Life</h3>
-        <p>The first program that I wrote (aside from the classic "hello world") was a for-loop to display a right triangle of asterisks using Turbo Pascal in highschool.
-          I knew then that I will be doing this for the rest of my life. </p>
-        <p>Over the years, I have acquired various skill sets in software design, development and maintenance.
-          My career goal is to keep up with our ever changing world of technology, strive to create innovative solutions and have the most fun while I'm at it.</p>
-      </div>
-      <div class="skill-row">
-        <img class="animated-soup" src="https://media.giphy.com/media/l1KsPMqu0JwnAZkUE/giphy.gif" alt="">
-        <h3>I Love Food</h3>
-        <p>I enjoy watching culinary shows, food and travel vlogs and documentaries. I find that the best way to appreciate a new culture or country is to
-          learn about its food history and specialties. J.R.R. Tolkien said "If more of us valued food and cheer and song above hoarded gold, it would be a merrier world."
-          He is absolutely right. </p>
-        <p>My comfort food is the Korean Pork Bone soup.</p>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#work">Experience</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
-
-    <hr class="squared">
-
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>I am currently looking for a co-op field placement position.</h3>
-      <p>Let's talk about how I can contribute productively to your organization as a budding mobile and web applications developer.</p>
-      <a href="mailto:a.hufana@gmail.com" class="btn btn-outline-info btn-footer" role="button">Email Me</a>
-      <a href="https://www.linkedin.com/in/angel-abubo/" class="btn btn-outline-info btn-footer" role="button">Hire Me</a>
+  </nav>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="">
+        <h2 class="text-light mt-2 mb-5">Hello, I am</h2>
+        <h1 class="mx-auto my-0 text-uppercase mb-5">Angel Abubo.</h1>
+        <h2 class="text-light  mt-2 mb-5">I am a software developer by profession, currently based in Toronto, ON. I am at the moment, sharpening my saw so that I can learn to build things for the web and the stuff in between.</h2>
+        <a class="btn btn-primary js-scroll-trigger" href="#about">Get Started</a>
+      </div>
     </div>
-  </div>
+  </header>
+  <!-- About-->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <h2 class="mb-4">About Me</h2>
+          <p class="">I am a C++ and C# .Net developer for more than 10 years mainly in Windows environments using a variety of technologies. I have extensive experience in the different stages of software development: requirements gathering and
+            analysis, design, implementation, testing, documentation, maintenance and support.</p>
+          <p class="">I am passionate about product development and I love the process of bringing creative ideas to fruition.</p>
+          <p class="">I am currently studying Mobile/Web Applications Development at Cambrian at Hanson, North York. Here are a number of technologies I have been using recently</p>
+          <ul>
+            <li>HTML5, CSS3, Bootstrap 4</li>
+            <li>JavaScript(ES6), EJS</li>
+            <li>React</li>
+            <li>Node.js with Express</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+      </div>
 
-  <footer id="footer">
-    <p>© Copyright 2020 Angel Abubo</p>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </div>
+  </section>
+
+  <!-- Projects-->
+  <section class="projects-section bg-dark" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <h2 class="mb-5 text-light">Projects I've Built</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-5">
+        <div class="col-lg-6"><img class="img-fluid" src="assets/img/dearjournal.jpg" alt="dear-journal" /></div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Dear Journal</h4>
+                <p class="mb-2 text-white-50">A minimalistic web app for users to log their daily thoughts and feelings.</p>
+                <p class="mb-7 text-white-50">Bootstrap Node.js Express EJS MySQL</p>
+                <a class="" href="https://dearjournal.herokuapp.com">View Demo</a>
+                <hr class="d-none d-lg-block mb-0 ml-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-5">
+        <div class="col-lg-6"><img class="img-fluid" src="assets/img/todolist.jpg" alt="dear-journal" /></div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Sticky Notes</h4>
+                <p class="mb-2 text-white-50">A simple web app that mimics a personal Kanban Board to track a user's To Do list.</p>
+                <p class="mb-7 text-white-50">Bootstrap PHP MySQL</p>
+                <a class="" href="https://github.com/angelabubo/mytodolist">View Code in Github</a>
+                <hr class="d-none d-lg-block mb-0 ml-0" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+  <!-- Work Experience-->
+  <section class="work-section bg-light" id="work">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <h2 class="mb-4">Where I've Worked</h2>
+        </div>
+      </div>
+      <div class="row row-experience">
+        <div class="col-md">
+          <h4>Emerson Automation Solutions</h4>
+          <div class="row work-title-date">
+            <div class="col-md-8">
+              <p>Senior Developer</p>
+            </div>
+            <div class="col-md-4 ml-auto">
+              <p>July 2014 – August 2019</p>
+            </div>
+          </div>
+
+          <div class="row work-title-date">
+            <div class="col-md-8">
+              <p>Intermediate Software Engineer</p>
+            </div>
+            <div class="col-md-4 ml-auto">
+              <p>July 2012 – July 2014</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-experience">
+        <div class="col-md">
+          <h4>Hypercom ASIA(S) PTE LTD (Acquired by VeriFone)</h4>
+          <div class="row work-title-date">
+            <div class="col-md-8">
+              <p>Software Engineer 1</p>
+            </div>
+            <div class="col-md-4 ml-auto">
+              <p>April 2011 – May 2012</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-experience">
+        <div class="col-md">
+          <h4>Advanced World Solutions, Inc.</h4>
+          <div class="row work-title-date">
+            <div class="col-md-8">
+              <p>Research and Development Engineer</p>
+            </div>
+            <div class="col-md-4 ml-auto">
+              <p>October 2007 – April 2011</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="assets/Resume_Angelita_H_Abubo_Co-op.pdf" target="_blank">Get a copy of my resume</a>
+
+  </section>
+  <!-- Contact-->
+  <section class="contact-section bg-black" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg">
+          <h2 class="mb-5">Get in touch</h2>
+          <p>I am currently looking for a co-op opportunities for the Fall Term 2020.</p>
+          <p>Let's talk about how I can contribute productively to your organization as a software applications developer.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <div class="small text-black-50"><a href="#!">a.hufana@gmail.com</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4" />
+              <div class="small text-black-50">+1 (555) 902-8832</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social d-flex justify-content-center">
+        <i class="fas fa-envelope footericon"></i>
+        <i class="fas fa-mobile-alt footericon"></i>
+        <i class="fab fa-linkedin footericon"></i>
+        <i class="fab fa-github footericon"></i>
+      </div>
+
+
+
+
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="footer bg-dark small text-center text-white-50">
+    <div class="container">Copyright © Angel Abubo 2020</div>
   </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
 
+  <!-- Optional JavaScript -->
 
 </body>
 
