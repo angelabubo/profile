@@ -1,6 +1,11 @@
 body {
   letter-spacing: 0.0625em;
   font-family: "Montserrat";
+  color: #253237;
+}
+
+.container {
+  width: 75%;
 }
 
 .logo {
@@ -16,8 +21,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #5c6b73;
+  border: 1px solid #5c6b73;
 }
 
 #mainNav .navbar-toggler:focus {
@@ -25,18 +30,24 @@ body {
 }
 
 #mainNav .navbar-brand {
-  color: #000000;
+  color: #333333;
   font-weight: 700;
   padding: 0.9rem 0;
 }
 
-#mainNav .navbar-nav .nav-item:hover {
+/* #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
   outline: none;
   background-color: transparent;
+} */
+
+.customs {
+  text-align: right;
+  color: yellow;
 }
 
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
 }
@@ -58,11 +69,11 @@ body {
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #9db4c0;
   }
 
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #c2dfe3;
   }
 
   #mainNav .nav-link:active {
@@ -74,34 +85,32 @@ body {
   }
 
   #mainNav.navbar-shrink .navbar-brand {
-    color: #000000;
+    color: #253237;
   }
 
   #mainNav.navbar-shrink .nav-link {
-    color: #000000;
+    color: #253237;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
 
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
-  }
-
-  #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #c2dfe3;
   }
 
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #5c6b73;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #5c6b73;
   }
 }
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -114,27 +123,27 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background-color: #333333;
+  background-color: #253237;
 }
 
 .masthead h1 {
   font-family: "Montserrat";
-  font-size: 2.5rem;
-  font-weight: 800;
-  line-height: 2.5rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
   letter-spacing: 0.8rem;
   color: #f7f7f7;
 }
 
 .masthead h2 {
-  max-width: 20rem;
-  font-size: 1rem;
+  max-width: 25rem;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }
 
@@ -145,14 +154,14 @@ body {
   }
 
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+    font-size: 5rem;
+    line-height: 5rem;
     letter-spacing: 0.8rem;
   }
 
   .masthead h2 {
     max-width: 40rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -169,12 +178,71 @@ body {
 .about-section {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-color: #fff;
+  background-color: #eaffff;
 }
 
 .about-section p {
   margin-bottom: 2rem;
-  color: #8f8f8f;
+  color: #5c6b73;
+  max-width: 40rem;
+}
+
+.about-section ul {
+  list-style-type: none;
+  color: #5c6b73;
+}
+.about-section li::before {
+  content: "\1F4BB";
+  margin-left: -40px;
+  margin-right: 15px;
+}
+
+.projects-section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #5c6b73;
+}
+
+.projects-section .project-text {
+  font-size: 80%;
+}
+
+.projects-section h4 {
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+.projects-section a {
+  color: #e0fbfc;
+  font-weight: 500;
+}
+
+.projects-section .project-text hr {
+  border-color: #e0fbfc;
+  border-width: 0.25rem;
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.tech-style {
+  font-family: "Courier Prime", monospace;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    font-size: 90%;
+  }
+
+  .projects-section h4 {
+    padding-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .projects-section .project-text hr {
+    border-color: #e0fbfc;
+    border-width: 0.25rem;
+    width: 43%;
+  }
 }
 
 .work-section {
@@ -185,6 +253,7 @@ body {
 
 .work-section p {
   margin-bottom: 10px;
+
   color: #8f8f8f;
 }
 
@@ -192,41 +261,15 @@ body {
   margin-bottom: 20px;
 }
 
-.projects-section {
-  padding: 10rem 0;
-}
-
-.projects-section .featured-text {
-  padding: 2rem;
-}
-
-@media (min-width: 992px) {
-  .projects-section .featured-text {
-    padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
-  }
-}
-
-.projects-section .project-text {
-  padding: 3rem;
-  font-size: 90%;
-}
-
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 5rem;
-  }
-
-  .projects-section .project-text hr {
-    border-color: #64a19d;
-    border-width: 0.25rem;
-    width: 30%;
-  }
-}
-
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 75%,
+      #000000 100%
+    ),
+    url("../assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -237,7 +280,9 @@ body {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -248,69 +293,29 @@ body {
   padding-top: 5rem;
 }
 
-.contact-section .card {
-  border: 0;
-  border-bottom: 0.25rem solid #64a19d;
-}
-
-.contact-section .card h4 {
-  font-size: 0.8rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-}
-
-.contact-section .card hr {
-  border-color: #64a19d;
-  border-width: 0.25rem;
-  width: 3rem;
-}
-
 .contact-section .social {
   margin-top: 5rem;
 }
 
-/* .contact-section .social a {
-  text-align: center;
-  height: 3rem;
-  width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
-} */
-/* .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
-} */
-/* .contact-section .social a:active {
-  color: #fff;
-} */
 .social-link {
   display: block;
   height: 4rem;
   width: 4rem;
   line-height: 4.3rem;
   font-size: 2.5rem;
-  background-color: #1d809f;
-  transition: background-color .15s ease-in-out;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .1);
+  background-color: #5c6b73;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .social-link:hover {
-  background-color: #155d74;
-  text-decoration: none
+  background-color: #9db4c0;
+  text-decoration: none;
 }
 
 .fa:hover {
   opacity: 0.7;
-}
-
-.footericon {
-  margin: 50px;
-  width: 200px;
-  height: 100px;
-  color: blue;
 }
 
 .footer {

@@ -15,7 +15,7 @@
   <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -25,12 +25,12 @@
 
 <body id="page-top">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light customs fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <img class="logo" src="assets/img/programmer_128.png" alt="logo">
       </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i
+      <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
           class="fas fa-bars"></i></button>
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -49,22 +49,23 @@
       <div class="">
         <h2 class="text-light mt-2 mb-5">Hello, I am</h2>
         <h1 class="mx-auto my-0 text-uppercase mb-5">Angel Abubo.</h1>
-        <h2 class="text-light  mt-2 mb-5">I am a software developer by profession, currently based in Toronto, ON. I am at the moment, sharpening my saw so that I can learn to build things for the web and the stuff in between.</h2>
+        <h2 class="text-light  mt-2 mb-5">I am a software developer by profession based in Toronto, ON. I am at the moment, sharpening my saw so that I can learn to build things for the web and the stuff in between.</h2>
         <a class="btn btn-primary js-scroll-trigger" href="#contact">Get in touch!</a>
       </div>
     </div>
   </header>
+
   <!-- About-->
   <section class="about-section" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-10">
-          <h2 class="mb-4">About Me</h2>
-          <p class="">I am a C++ and C# .Net developer for more than 10 years mainly in Windows environments using a variety of technologies. I have extensive experience in the different stages of software development: requirements gathering and
+        <div class="">
+          <h2 class="mb-5">About Me</h2>
+          <p class="">I am a C++ and C# .Net developer for more than 10 years mainly in Windows environments. I have extensive experience in the different stages of software development: requirements gathering and
             analysis, design, implementation, testing, documentation, maintenance and support.</p>
           <p class="">I am passionate about product development and I love the process of bringing creative ideas to fruition.</p>
           <p class="">I am currently studying Mobile/Web Applications Development at Cambrian at Hanson, North York. Here are a number of technologies I have been using recently</p>
-          <ul>
+          <ul class="tech-style">
             <li>HTML5, CSS3, Bootstrap 4</li>
             <li>JavaScript(ES6), EJS</li>
             <li>React</li>
@@ -79,47 +80,39 @@
   </section>
 
   <!-- Projects-->
-  <section class="projects-section bg-dark" id="projects">
+  <section class="projects-section" id="projects">
     <div class="container">
       <div class="row">
-        <div class="col-lg">
           <h2 class="mb-5 text-light">Projects I've Built</h2>
-        </div>
       </div>
 
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-5">
-        <div class="col-lg-6"><img class="img-fluid" src="assets/img/dear-journal.jpg" alt="dear-journal" /></div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Dear Journal</h4>
-                <p class="mb-2 text-white-50">A minimalistic web app for users to log their daily thoughts and feelings.</p>
-                <p class="mb-7 text-white-50">Bootstrap Node.js Express EJS MySQL</p>
-                <a class="" href="https://dearjournal.herokuapp.com">View Demo</a>
-                <hr class="d-none d-lg-block mb-0 ml-0" />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row mb-5 mb-lg-5">
+        <div class="col-lg-6 "><img class="img-fluid" src="assets/img/dear-journal.jpg" alt="dear-journal" /></div>      
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start project-text">          
+            <h4 class="text-white">Dear Journal</h4>
+            <p class="mb-2 text-white-50">A minimalistic web app for users to log their daily thoughts and feelings.</p>
+            <p class="mb-7 text-white tech-style">Bootstrap Node.js Express EJS MySQL</p>
+            <a href="https://dearjournal.herokuapp.com">View Demo</a>       
+            <hr class="ml-0" />   
+        </div>      
       </div>
 
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-5">
-        <div class="col-lg-6"><img class="img-fluid" src="assets/img/stickynotes.jpg" alt="stickynotes" /></div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Sticky Notes</h4>
-                <p class="mb-2 text-white-50">A simple web app that mimics a personal Kanban Board to track a user's To Do list.</p>
-                <p class="mb-7 text-white-50">Bootstrap PHP MySQL</p>
-                <a class="" href="https://github.com/angelabubo/mytodolist">View Code in Github</a>
-                <hr class="d-none d-lg-block mb-0 ml-0" />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row mb-5 mb-lg-5">
+        <div class="col-lg-6 "><img class="img-fluid" src="assets/img/stickynotes.jpg" alt="stickynotes" /></div>      
+        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start project-text">          
+            <h4 class="text-white">Sticky Notes</h4>
+            <p class="mb-2 text-white-50">A simple web app that mimics a personal Kanban Board to track a user's To Do list.</p>
+            <p class="mb-7 text-white tech-style">Bootstrap PHP MySQL</p>
+            <a href="https://github.com/angelabubo/mytodolist">View Code in Github</a>    
+            <hr class="mb-0 ml-0" />   
+        </div>      
       </div>
+
+
+
+
+
+    </div>
   </section>
 
 
@@ -220,15 +213,13 @@
 
       </div>
 
-
-
-
     </div>
   </section>
   <!-- Footer-->
   <footer class="footer bg-dark small text-center text-white-50">
     <div class="container">Copyright © Angel Abubo 2020</div>
   </footer>
+  
   <!-- Bootstrap core JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
