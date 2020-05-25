@@ -16,6 +16,7 @@ body {
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
+  font-size: 85%;
 }
 
 #mainNav .navbar-toggler {
@@ -29,27 +30,14 @@ body {
   outline: none;
 }
 
-#mainNav .navbar-brand {
-  color: #333333;
-  font-weight: 700;
-  padding: 0.9rem 0;
-}
-
-/* #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
-  outline: none;
-  background-color: transparent;
-} */
-
-.customs {
-  text-align: right;
-  color: yellow;
-}
-
 #mainNav .navbar-nav .nav-item:active,
 #mainNav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
+}
+
+.navbar-brand {
+  margin-left: -1rem;
 }
 
 @media (min-width: 992px) {
@@ -61,14 +49,9 @@ body {
     transition: background-color 0.3s ease-in-out;
   }
 
-  #mainNav .navbar-brand {
-    padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
-  }
-
   #mainNav .nav-link {
     transition: none;
-    padding: 2rem 1.5rem;
+    padding: 2rem 1rem;
     color: #9db4c0;
   }
 
@@ -107,14 +90,14 @@ body {
 
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  padding: 0.75rem;
+  /* font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  font-size: 90%;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
+  /* letter-spacing: 0.15rem; */
+  /* border: 0; */
 }
 
 .masthead {
@@ -178,13 +161,13 @@ body {
 .about-section {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-color: #eaffff;
+  background-color: #f5f5f5;
 }
 
 .about-section p {
   margin-bottom: 2rem;
   color: #5c6b73;
-  max-width: 40rem;
+  max-width: 48rem;
 }
 
 .about-section ul {
@@ -204,7 +187,7 @@ body {
 }
 
 .projects-section .project-text {
-  font-size: 80%;
+  font-size: 90%;
 }
 
 .projects-section h4 {
@@ -230,7 +213,7 @@ body {
 
 @media (min-width: 992px) {
   .projects-section .project-text {
-    font-size: 90%;
+    font-size: 95%;
   }
 
   .projects-section h4 {
@@ -248,62 +231,45 @@ body {
 .work-section {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  background-color: #fff;
+  background-color: #f5f5f5;
 }
 
 .work-section p {
   margin-bottom: 10px;
-
-  color: #8f8f8f;
+  color: #5c6b73;
 }
 
 .row-experience {
   margin-bottom: 20px;
 }
 
-.signup-section {
-  padding: 10rem 0;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1) 0%,
-      rgba(0, 0, 0, 0.5) 75%,
-      #000000 100%
-    ),
-    url("../assets/img/bg-signup.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-.signup-section .form-inline input {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
-  height: auto;
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  border: 0;
-}
-
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #253237;
 }
 
 .contact-section .social {
   margin-top: 5rem;
 }
 
+.contact-section p {
+  max-width: 48rem;
+}
+
+.social-button {
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
 .social-link {
   display: block;
-  height: 4rem;
-  width: 4rem;
-  line-height: 4.3rem;
-  font-size: 2.5rem;
-  background-color: #5c6b73;
+  height: 2rem;
+  width: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  background-color: #7e919d;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -320,4 +286,5 @@ body {
 
 .footer {
   padding: 3rem 0;
+  background-color: #e0fbfc;
 }
