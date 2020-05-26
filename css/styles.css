@@ -4,10 +4,25 @@ body {
   color: #253237;
 }
 
-.container {
-  width: 75%;
+section {
+  padding: 7rem 0;
 }
 
+.container-fluid {
+  /* top-r/l-b */
+  padding: 0 15% 0;
+}
+
+#title {
+  background-color: #253237;
+  color: #fff;
+}
+
+section#title {
+  padding: 20% 0;
+}
+
+/* Navigation Bar */
 .logo {
   width: 50px;
   height: 50px;
@@ -34,10 +49,6 @@ body {
 #mainNav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
-}
-
-.navbar-brand {
-  margin-left: -1rem;
 }
 
 @media (min-width: 992px) {
@@ -88,68 +99,107 @@ body {
   }
 }
 
-.btn {
-  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 0.75rem;
-  /* font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
-  font-size: 90%;
-  text-transform: uppercase;
-  /* letter-spacing: 0.15rem; */
-  /* border: 0; */
+/* Master Header */
+.masterheader {
+  padding-top: 3rem;
 }
 
-.masthead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background-color: #253237;
-}
-
-.masthead h1 {
-  font-family: "Montserrat";
+h1 {
   font-size: 4.5rem;
   font-weight: 700;
-  line-height: 4.5rem;
+  line-height: 1.5;
   letter-spacing: 0.8rem;
-  color: #f7f7f7;
 }
 
-.masthead h2 {
-  max-width: 25rem;
+h3 {
   font-size: 1.25rem;
+  line-height: 1.5;
 }
 
-@media (min-width: 768px) {
-  .masthead h1 {
-    font-size: 5rem;
-    line-height: 5rem;
-  }
+/* About Me */
+#about {
+  position: relative;
+  background-color: #f5f5f5;
+  color: #5c6b73;
+}
+
+#about p {
+  margin-bottom: 2rem;
+  max-width: 48rem;
+}
+
+#about ul {
+  list-style-type: none;
+}
+
+#about li::before {
+  content: "\1F4BB";
+  margin-left: -40px;
+  margin-right: 15px;
+}
+
+.tech-style {
+  font-family: "Courier Prime", monospace;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #5c6b73;
+}
+
+#projects .project-text {
+  font-size: 90%;
+}
+
+#projects h4 {
+  padding-top: 2rem;
+  font-size: 1rem;
+}
+
+#projects a {
+  color: #e0fbfc;
+  font-weight: 500;
+}
+
+#projects .project-text hr {
+  border-color: #e0fbfc;
+  border-width: 0.25rem;
+  width: 150px;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
-    padding: 0;
+  #projects .project-text {
+    font-size: 95%;
   }
 
-  .masthead h1 {
-    font-size: 5rem;
-    line-height: 5rem;
-    letter-spacing: 0.8rem;
-  }
-
-  .masthead h2 {
-    max-width: 40rem;
+  #projects h4 {
+    padding-top: 0;
     font-size: 1.5rem;
+  }
+
+  #projects .project-text hr {
+    border-color: #e0fbfc;
+    border-width: 0.25rem;
+    width: 43%;
   }
 }
 
-@media (max-width: 768px) {
-  .work-section p {
+#work {
+  background-color: #f5f5f5;
+}
+
+#work p {
+  margin-bottom: 10px;
+  color: #5c6b73;
+}
+
+#work .row-experience {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  #work p {
     margin-bottom: 0px;
   }
 
@@ -158,102 +208,16 @@ body {
   }
 }
 
-.about-section {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  background-color: #f5f5f5;
-}
-
-.about-section p {
-  margin-bottom: 2rem;
-  color: #5c6b73;
-  max-width: 48rem;
-}
-
-.about-section ul {
-  list-style-type: none;
-  color: #5c6b73;
-}
-.about-section li::before {
-  content: "\1F4BB";
-  margin-left: -40px;
-  margin-right: 15px;
-}
-
-.projects-section {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  background-color: #5c6b73;
-}
-
-.projects-section .project-text {
-  font-size: 90%;
-}
-
-.projects-section h4 {
-  padding-top: 2rem;
-  font-size: 1rem;
-}
-
-.projects-section a {
-  color: #e0fbfc;
-  font-weight: 500;
-}
-
-.projects-section .project-text hr {
-  border-color: #e0fbfc;
-  border-width: 0.25rem;
-  width: 150px;
-  margin-bottom: 2rem;
-}
-
-.tech-style {
-  font-family: "Courier Prime", monospace;
-}
-
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    font-size: 95%;
-  }
-
-  .projects-section h4 {
-    padding-top: 0;
-    font-size: 1.5rem;
-  }
-
-  .projects-section .project-text hr {
-    border-color: #e0fbfc;
-    border-width: 0.25rem;
-    width: 43%;
-  }
-}
-
-.work-section {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  background-color: #f5f5f5;
-}
-
-.work-section p {
-  margin-bottom: 10px;
-  color: #5c6b73;
-}
-
-.row-experience {
-  margin-bottom: 20px;
-}
-
-.contact-section {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+#contact {
+  color: #fff;
   background-color: #253237;
 }
 
-.contact-section .social {
+#contact .social {
   margin-top: 5rem;
 }
 
-.contact-section p {
+#contact p {
   max-width: 48rem;
 }
 
@@ -287,4 +251,11 @@ body {
 .footer {
   padding: 3rem 0;
   background-color: #e0fbfc;
+}
+
+/* Responsive Website */
+@media (max-width : 1024px) {
+  #title {
+    text-align: center;
+  }
 }
