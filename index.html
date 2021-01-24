@@ -1,285 +1,387 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Angel Abubo</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Angel Abubo</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Icons -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      integrity="sha384-ujbKXb9V3HdK7jcWL6kHL1c+2Lj4MR4Gkjl7UtwpSHg/ClpViddK9TI7yU53frPN"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Icons -->
-  <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" integrity="sha384-ujbKXb9V3HdK7jcWL6kHL1c+2Lj4MR4Gkjl7UtwpSHg/ClpViddK9TI7yU53frPN" crossorigin="anonymous"></script>
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
 
-  <!-- Custom CSS -->
-  <link href="css/styles.css" rel="stylesheet" />
+  <body>
+    <!-- Master Header -->
+    <section id="title">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Nav Bar -->
+          <nav
+            class="navbar navbar-expand-lg navbar-light fixed-top text-center"
+            id="mainNav"
+          >
+            <a class="navbar-brand js-scroll-trigger" href="#title">
+              <img
+                class="logo"
+                src="assets/img/programmer_128.png"
+                alt="logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+              <!-- <i class="fas fa-bars"></i> -->
+            </button>
 
-</head>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#projects"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#work"
+                    >Experience</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link js-scroll-trigger"
+                    href="assets/Resume_Angelita_H_Abubo_Co-op.pdf"
+                    target="_blank"
+                    >Resume</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
 
-<body>
-  <!-- Master Header -->
-  <section id="title">
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top text-center" id="mainNav">
-          <a class="navbar-brand js-scroll-trigger" href="#title">
-            <img class="logo" src="assets/img/programmer_128.png" alt="logo" />
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <!-- <i class="fas fa-bars"></i> -->
-          </button>
+        <!-- Header -->
+        <div class="row">
+          <div class="col-lg masterheader">
+            <h3 class="text-light mt-2 mb-5">Hello, I am</h3>
+            <h1 class="mx-auto my-0 text-uppercase mb-5">Angel Abubo.</h1>
+            <h3 class="text-light mt-2 mb-5">
+              I am a software developer by profession based in Toronto, ON. For
+              a long time, I was focused on building on-premise solutions. I
+              have grown to love full stack web development and so at the
+              moment, I am continuously sharpening my saw so that I can learn
+              and expertly build things for the web and the stuff in between.
+            </h3>
+            <a class="btn btn-primary js-scroll-trigger" href="#contact"
+              >Get in touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#work">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="assets/Resume_Angelita_H_Abubo_Co-op.pdf" target="_blank">Resume</a>
-              </li>
+    <!-- About -->
+    <section id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg">
+            <h2 class="mb-5">About Me</h2>
+            <p>
+              I am a C++/C# .Net developer for more than 10 years mainly in
+              Windows environments. I have extensive experience in the different
+              stages of software development: requirements gathering and
+              analysis, design, implementation, testing, documentation,
+              maintenance and support.
+            </p>
+            <p>
+              I am passionate about product development and I love the process
+              of bringing creative ideas to reality.
+            </p>
+            <p>
+              I recently graduated from my study program Mobile Application
+              Development at Cambrian at Hanson, North York where I got some
+              exposure about modern Javascript frameworks and libraries. I have
+              decided to focus on full stack web development and I have been
+              experimenting around these technologies:
+            </p>
+            <ul class="tech-style">
+              <li>HTML5/CSS3, Bootstrap 4, Material-UI</li>
+              <li>JavaScript(ES6), EJS</li>
+              <li>React.js</li>
+              <li>Node.js with Express</li>
+              <li>Next.js</li>
+              <li>MySQL, NoSQL (MongoDB)</li>
+              <li>RESTful APIs</li>
             </ul>
           </div>
-        </nav>
-      </div>
-
-
-      <!-- Header -->
-      <div class="row">
-        <div class="col-lg masterheader">
-          <h3 class="text-light mt-2 mb-5">Hello, I am</h3>
-          <h1 class="mx-auto my-0 text-uppercase mb-5">Angel Abubo.</h1>
-          <h3 class="text-light mt-2 mb-5">
-            I am a software developer by profession based in Toronto, ON. I am
-            at the moment, sharpening my saw so that I can learn to build things
-            for the web and the stuff in between.
-          </h3>
-          <a class="btn btn-primary js-scroll-trigger" href="#contact">Get in touch</a>
         </div>
       </div>
+    </section>
 
-    </div>
-
-  </section>
-
-
-  <!-- About -->
-  <section id="about">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg">
-          <h2 class="mb-5">About Me</h2>
-          <p>
-            I am a C++ and C# .Net developer for more than 10 years mainly in
-            Windows environments. I have extensive experience in the different
-            stages of software development: requirements gathering and
-            analysis, design, implementation, testing, documentation,
-            maintenance and support.
-          </p>
-          <p>
-            I am passionate about product development and I love the process
-            of bringing creative ideas to fruition.
-          </p>
-          <p>
-            I am currently studying Mobile/Web Applications Development at
-            Cambrian at Hanson, North York. Here are a number of technologies
-            I have been using recently
-          </p>
-          <ul class="tech-style">
-            <li>HTML5, CSS3, Bootstrap 4</li>
-            <li>JavaScript(ES6), EJS</li>
-            <li>React</li>
-            <li>Node.js with Express</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container-fluid">
-
-      <div class="row">
-        <div class="col-lg">
-          <h2 class="mb-5 text-light">Projects I've Built</h2>
-        </div>
-      </div>
-
-      <div class="row mb-5 mb-lg-5">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/dear-journal.jpg" alt="dear-journal" />
-        </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start project-text">
-          <h4 class="text-white">Dear Journal</h4>
-          <p class="mb-2 text-white-50">
-            A minimalistic web app for users to log their daily thoughts and
-            feelings.
-          </p>
-          <p class="mb-7 text-white tech-style">
-            Bootstrap Node.js Express EJS MySQL
-          </p>
-          <a href="https://dearjournal.herokuapp.com">View Demo</a>
-          <hr class="ml-0" />
-        </div>
-      </div>
-
-      <div class="row mb-5 mb-lg-5">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="assets/img/stickynotes.jpg" alt="stickynotes" />
-        </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-start project-text">
-          <h4 class="text-white">Sticky Notes</h4>
-          <p class="mb-2 text-white-50">
-            A simple web app that mimics a personal Kanban Board to track a
-            user's To Do list.
-          </p>
-          <p class="mb-7 text-white tech-style">Bootstrap PHP MySQL</p>
-          <a href="https://github.com/angelabubo/mytodolist">View Code in Github</a>
-          <hr class="mb-0 ml-0" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Experience -->
-  <section id="work">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg">
-          <h2 class="mb-5">Where I've Worked</h2>
-        </div>
-      </div>
-
-      <div class="row row-experience">
-        <div class="col-lg">
-          <p class="font-weight-bold">Emerson Automation Solutions</p>
-          <div class="row work-title-date">
-            <div class="col-lg-8">
-              <p>Senior Developer</p>
-            </div>
-            <div class="col-lg-4 ml-auto">
-              <p>July 2014 – August 2019</p>
-            </div>
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg">
+            <h2 class="mb-5 text-light">Projects I've Built</h2>
           </div>
+        </div>
 
-          <div class="row work-title-date">
-            <div class="col-lg-8">
-              <p>Intermediate Software Engineer</p>
-            </div>
-            <div class="col-lg-4 ml-auto">
-              <p>July 2012 – July 2014</p>
-            </div>
+        <div class="row mb-5 mb-lg-5">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/warrenai_home.png"
+              alt="warren-ai"
+            />
+          </div>
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-start project-text"
+          >
+            <h4 class="text-white">Warren AI</h4>
+            <p class="mb-2 text-white-50">
+              A subscription-based web app that lets users view real-time
+              information about stocks, latest news, manage their portfolio,
+              create their stock watchlist. This is part of my capstone and case
+              study project in which we are required to recreate and improve an
+              existing real-time stock monitoring website.
+            </p>
+            <p class="mb-7 text-white tech-style">
+              React.js Material-UI Node.js Express Next.js MySQL Stripe API
+            </p>
+            <a href="https://warrenai.herokuapp.com/" target="_blank"
+              >View Demo</a
+            >
+            <hr class="ml-0" />
+          </div>
+        </div>
+
+        <div class="row mb-5 mb-lg-5">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/dear-journal.jpg"
+              alt="dear-journal"
+            />
+          </div>
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-start project-text"
+          >
+            <h4 class="text-white">Dear Journal</h4>
+            <p class="mb-2 text-white-50">
+              A minimalistic web app for users to log their daily thoughts and
+              feelings.
+            </p>
+            <p class="mb-7 text-white tech-style">
+              Bootstrap Node.js Express EJS MySQL
+            </p>
+            <a href="https://dearjournal.herokuapp.com" target="_blank"
+              >View Demo</a
+            >
+            <hr class="ml-0" />
+          </div>
+        </div>
+
+        <div class="row mb-5 mb-lg-5">
+          <div class="col-lg-6">
+            <img
+              class="img-fluid"
+              src="assets/img/stickynotes.jpg"
+              alt="stickynotes"
+            />
+          </div>
+          <div
+            class="col-lg-6 d-flex flex-column justify-content-center align-items-start project-text"
+          >
+            <h4 class="text-white">Sticky Notes</h4>
+            <p class="mb-2 text-white-50">
+              A simple web app that mimics a personal Kanban Board to track a
+              user's To Do list.
+            </p>
+            <p class="mb-7 text-white tech-style">Bootstrap PHP MySQL</p>
+            <a href="https://github.com/angelabubo/mytodolist" target="_blank"
+              >View Code in Github</a
+            >
+            <hr class="mb-0 ml-0" />
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="row row-experience">
-        <div class="col-lg">
-          <p class="font-weight-bold">
-            Hypercom ASIA(S) PTE LTD (Acquired by VeriFone)
-          </p>
-          <div class="row work-title-date">
-            <div class="col-lg-8">
-              <p>Software Engineer 1</p>
+    <!-- Work Experience -->
+    <section id="work">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg">
+            <h2 class="mb-5">Where I've Worked</h2>
+          </div>
+        </div>
+
+        <div class="row row-experience">
+          <div class="col-lg">
+            <p class="font-weight-bold">Emerson Automation Solutions</p>
+            <div class="row work-title-date">
+              <div class="col-lg-8">
+                <p>Senior Developer</p>
+              </div>
+              <div class="col-lg-4 ml-auto">
+                <p>July 2014 – August 2019</p>
+              </div>
             </div>
-            <div class="col-lg-4 ml-auto">
-              <p>April 2011 – May 2012</p>
+
+            <div class="row work-title-date">
+              <div class="col-lg-8">
+                <p>Intermediate Software Engineer</p>
+              </div>
+              <div class="col-lg-4 ml-auto">
+                <p>July 2012 – July 2014</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row row-experience">
-        <div class="col-lg">
-          <p class="font-weight-bold">Advanced World Solutions, Inc.</p>
-          <div class="row work-title-date">
-            <div class="col-lg-8">
-              <p>Research and Development Engineer</p>
-            </div>
-            <div class="col-lg-4 ml-auto">
-              <p>October 2007 – April 2011</p>
+        <div class="row row-experience">
+          <div class="col-lg">
+            <p class="font-weight-bold">
+              Hypercom ASIA(S) PTE LTD (Acquired by VeriFone)
+            </p>
+            <div class="row work-title-date">
+              <div class="col-lg-8">
+                <p>Software Engineer 1</p>
+              </div>
+              <div class="col-lg-4 ml-auto">
+                <p>April 2011 – May 2012</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="row row-experience">
+          <div class="col-lg">
+            <p class="font-weight-bold">Advanced World Solutions, Inc.</p>
+            <div class="row work-title-date">
+              <div class="col-lg-8">
+                <p>Research and Development Engineer</p>
+              </div>
+              <div class="col-lg-4 ml-auto">
+                <p>October 2007 – April 2011</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="btn btn-outline-primary mt-5"
+          href="assets/Resume_Angelita_H_Abubo_Co-op.pdf"
+          target="_blank"
+          role="button"
+          >My Resume</a
+        >
       </div>
+    </section>
 
-      <a class="btn btn-outline-primary mt-5" href="assets/Resume_Angelita_H_Abubo_Co-op.pdf" target="_blank" role="button">My Resume</a>
-    </div>
-
-  </section>
-
-  <!-- Contact-->
-  <section id="contact">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg">
-          <h2 class="mb-5">Get In Touch</h2>
-          <p>
-            I am currently looking for co-op opportunities for the Fall Term
-            2020. Let's talk about how I can contribute productively to your
-            organization as a software applications developer.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <!-- Footer-->
-  <footer class="footer small text-center text-dark-50">
-    <div class="container-fluid">
-      <div class="d-flex flex-row justify-content-center align-items-center">
-        <div class="social-button">
-          <a class="social-link rounded-circle text-white" href="mailto:a.hufana@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-        <div class="social-button">
-          <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/in/angel-abubo/">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </div>
-        <div class="social-button">
-          <a class="social-link rounded-circle text-white" href="https://github.com/angelabubo">
-            <i class="fab fa-github"></i>
-          </a>
+    <!-- Contact-->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg">
+            <h2 class="mb-5">Get In Touch</h2>
+            <p>
+              I am actively looking for opportunities to work full-time as a
+              software developer, preferably in full stack web development.
+              Let's talk about how I can contribute productively to your
+              organization as a software applications developer.
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div id="copyright"></div>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <!-- Footer-->
+    <footer class="footer small text-center text-dark-50">
+      <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <div class="social-button">
+            <a
+              class="social-link rounded-circle text-white"
+              href="mailto:a.hufana@gmail.com"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <div class="social-button">
+            <a
+              class="social-link rounded-circle text-white"
+              href="https://www.linkedin.com/in/angel-abubo/"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="social-button">
+            <a
+              class="social-link rounded-circle text-white"
+              href="https://github.com/angelabubo"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
 
-  <!-- Bootstrap core JS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <!-- Third party plugin JS-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-  <!-- Optional JavaScript -->
-  <script src="js/scripts.js"></script>
-</body>
+        <div id="copyright"></div>
+      </div>
+    </footer>
 
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

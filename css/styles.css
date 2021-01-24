@@ -32,6 +32,7 @@ section#title {
   min-height: 3.5rem;
   background-color: #fff;
   font-size: 85%;
+  padding: 0 15%;
 }
 
 #mainNav .navbar-toggler {
@@ -125,7 +126,7 @@ h3 {
 
 #about p {
   margin-bottom: 2rem;
-  max-width: 48rem;
+  /* max-width: 48rem; */
 }
 
 #about ul {
@@ -218,7 +219,7 @@ h3 {
 }
 
 #contact p {
-  max-width: 48rem;
+  /* max-width: 48rem; */
 }
 
 .social-button {
@@ -254,8 +255,14 @@ h3 {
 }
 
 /* Responsive Website */
-@media (max-width : 1024px) {
+@media (max-width: 1024px) {
   #title {
     text-align: center;
+  }
+
+  #mainNav {
+    min-height: 3.5rem;
+    font-size: 85%;
+    padding: 1rem 5%;
   }
 }
